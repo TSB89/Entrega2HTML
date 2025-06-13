@@ -1,0 +1,318 @@
+/* estrutura do site */
+body {
+  margin: 0;
+  padding: 0;
+  background: white;
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+  color: black;
+  text-align: center;
+}
+/* personalização da introdução */
+header {
+  padding: 10px;
+}
+
+/* personalização do slogam do evento */
+.slogam {
+  background-color: #4f4f4f;
+  color: white;
+  padding: 20px;
+  font-family: "Times New Roman", serif;
+  font-size: 1.5em;
+}
+/* personalização do footer */
+footer {
+  background-color: #a9a9a9;
+  color: white;
+  padding: 20px;
+}
+/* pesonalização dos links de navegação */
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  background: #4f4f4f;
+}
+/* personalização da âncoragem de links */
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+/* personalização do efeito sobre o mouse */
+nav a:hover {
+  background-color: #6b6b6b;
+}
+/* personalização da estrutura de conteudo */
+section {
+  margin: 30px auto;
+  max-width: 900px;
+  background: #a9a9a9;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+section h1 {
+  text-align: center;
+  color: white;
+}
+section p {
+  text-align: justify;
+  text-indent: 30px;
+  line-height: 1.6em;
+  color: white;
+}
+/* personalização da tabela */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+table,
+th,
+td {
+  border: 1px solid #ccc;
+}
+th {
+  background-color: #4f4f4f;
+  color: white;
+  padding: 10px;
+}
+td {
+  padding: 10px;
+  background-color: white;
+  color: black;
+}
+/* personalização do fomulario */
+form div {
+  margin-bottom: 15px;
+}
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: white;
+}
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+/* personalização do botão e efeitos */
+button {
+  background-color: #4f4f4f;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+button:hover {
+  background-color: #6b6b6b;
+}
+
+/* personalização do slogan */
+.slogam h2 {
+  color: white;
+  margin: 0;
+  padding: 20px;
+}
+
+/* personalização da tabela e efeitos */
+#Palestrantes table {
+  width: 95%;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+#Palestrantes th {
+  background-color: #4f4f4f;
+  color: white;
+  padding: 12px 8px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+/* efeitos nas imagens dos palestrantes */
+#Palestrantes td img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  border: 3px solid #a9a9a9;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+/* efeito de passar o mouse na foto */
+#Palestrantes tr:hover img {
+  transform: scale(1.08);
+  border-color: #4f4f4f;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Seção Galeria */
+
+.galeria h2 {
+    color: white;
+    margin-top: 5px;
+}
+
+.galeria img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.galeria .imagens {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.galeria img:hover {      /* Efeito para aumentar a imagem ao passar o mouse */
+    transform: scale(1.4);
+}
+
+/* Seção Depoimentos */
+
+.depoimentos h2 {
+  color: white;
+  margin-top: 10px;
+}
+
+.depoimento p {
+  color: black;
+  background-color: #fff;
+  display: inline-block;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 15px;
+  font-size: 16px;
+}
+
+/* Seção Patrocinadores */
+
+.patrocinadores h2 {
+    text-align: center;
+    color: white;
+    margin-top: 5px;
+}
+
+.patrocinadores .logos {
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.patrocinadores img {
+    width: 150px;
+    transition: transform 0.3s ease;
+}
+
+.patrocinadores img:hover {
+    transform: scale(1.3);
+}
+
+/* Seção Cards */
+
+#destaques h2 {
+    text-align: center;
+    color: white;
+    margin-top: 5px;
+}
+
+.card-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    width: 100%;
+    max-width: 250px;
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    color: black;
+    margin-top: 5px;
+}
+
+.card p {
+    color: black;
+    margin-top: 5px;
+}
+
+/* personalização das section de inscrição e contatos */
+section > div.Inscrições,
+section > div.contato {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section > div.Inscrições h2,
+section > div.contato h2 {
+  color: white;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+section > div.Inscrições label {
+  color: white;
+  text-align: left;
+  width: 100%;
+  max-width: 400px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+section > div.Inscrições input[type="text"],
+section > div.Inscrições input[type="email"] {
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+  text-align: center;
+  margin-bottom: 15px;
+}
+/* personalização do botão enviar mensagem */
+section > div.Inscrições button {
+  margin-top: 20px;
+}
+section > div.contato p {
+  color: white;
+  text-align: center;
+  text-indent: 0;
+  line-height: 1.5em;
+}
